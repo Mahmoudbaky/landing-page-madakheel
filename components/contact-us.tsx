@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
 import Icon from "./ui/icon";
 
 const ContactUs = () => {

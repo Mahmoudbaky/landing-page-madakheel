@@ -6,7 +6,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignJustify, Phone, ShoppingCart } from "lucide-react";
+import { AlignJustify, Phone } from "lucide-react";
 import Link from "next/link";
 
 const Menu = () => {
