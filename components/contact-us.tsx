@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Icon from "./ui/icon";
+import { Button } from "./ui/button";
 
 const ContactUs = () => {
   return (
@@ -22,17 +23,24 @@ const ContactUs = () => {
           نسعد بتقديم أفضل الخدمات اليكم من خلال الاتصال بنا على الرقم الموحد او
           عن طريق الايميل او من خلال نموذج الطلب ونعدكم بتجربة مميزة
         </p>
-        <div>
-          <div>
-            <Icon />
-            <div>
-              <span></span>
-              <span></span>
+        <div id="contact-info">
+          <div className="flex gap-12">
+            <div className="flex-start gap-3">
+              <Icon />
+              <div className="flex flex-col">
+                <span>رقم الهاتف</span>
+                <span>90000000</span>
+              </div>
+            </div>
+            <div className="flex-start gap-3">
+              <Icon />
+              <div className="flex flex-col">
+                <span> البريد الالكتروني</span>
+                <span>90000000</span>
+              </div>
             </div>
           </div>
-          <div>
-            <Icon />
-          </div>
+          <Button className="mt-6">تواصل معنا</Button>
         </div>
       </div>
     </div>
