@@ -3,6 +3,7 @@ import { Cairo } from "next/font/google";
 import { APP_NAME_AR, APP_DESCRIPTION, SERVER_URL } from "@/lib/constants";
 import Footer from "@/components/footer";
 import NavBar from "@/components/shared/header";
+// import HeaderWrapper from "@/components/shared/header/header-wrapper";
 
 import "../assets/styles/globals.css";
 
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${cairo.className}  antialiased`}>
+      <body className={` ${cairo.className}  antialiased `}>
         <NavBar />
         {children}
         <Footer />

@@ -1,12 +1,27 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import Menu from "./menu";
 import { APP_NAME_AR } from "@/lib/constants";
 
+import { useEffect, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 const NavBar = () => {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [currentPath, setCurrentPath] = useState(pathname);
+
+  useEffect(() => {
+    setCurrentPath(pathname);
+  }, [pathname, searchParams]);
+
+  // For debugging
+  console.log("Current path:", currentPath);
+
   return (
     <header className="w-full " dir="rtl">
-      <div className="wrapper flex-between  ">
+      <div className="wrapper flex-between">
         <div className="flex-start">
           <Link href="/" className="flex-start">
             <Image
@@ -15,7 +30,6 @@ const NavBar = () => {
               className="mx-3"
               width={70}
               height={70}
-              // layout="intrinsic"
               priority={true} // what is priority
             />
 
@@ -24,7 +38,6 @@ const NavBar = () => {
             </span>
           </Link>
         </div>
-
         <Menu />
       </div>
     </header>

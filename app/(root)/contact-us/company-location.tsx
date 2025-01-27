@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const CompanyLocation = () => {
   return (
     <div
@@ -12,9 +10,9 @@ const CompanyLocation = () => {
           width="400"
           height="300"
           style={{ border: 0 }}
-          allowfullscreen=""
+          // allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           className="rounded-lg shadow-lg"
         ></iframe>
       </div>
