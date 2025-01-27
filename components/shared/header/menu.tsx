@@ -6,7 +6,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignJustify, Phone } from "lucide-react";
+import { AlignJustify } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 
 const Menu = () => {
@@ -31,7 +32,7 @@ const Menu = () => {
 
         <Button asChild variant="ghost" className="bg-primary text-white">
           <Link href="/cart">
-            واتساب <Phone />
+            واتساب <FaWhatsapp />
           </Link>
         </Button>
       </nav>
@@ -60,7 +61,7 @@ const Menu = () => {
 
             <Button asChild variant="ghost" className="bg-primary text-white">
               <Link href="/cart">
-                واتساب <Phone />
+                واتساب <FaWhatsapp />
               </Link>
             </Button>
             <SheetDescription></SheetDescription>

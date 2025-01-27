@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Icon from "./ui/icon";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const ContactUs = () => {
   return (
@@ -40,7 +41,9 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <Button className="mt-6">تواصل معنا</Button>
+          <Button className="mt-6">
+            <Link href="/contact-us">تواصل معنا </Link>
+          </Button>
         </div>
       </div>
     </div>
