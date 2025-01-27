@@ -41,7 +41,11 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <Button className="mt-6">
+          <Button
+            asChild
+            variant="ghost"
+            className="mt-6 bg-primary text-white"
+          >
             <Link href="/contact-us">تواصل معنا </Link>
           </Button>
         </div>
