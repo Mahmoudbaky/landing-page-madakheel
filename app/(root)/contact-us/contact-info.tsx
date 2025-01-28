@@ -1,15 +1,4 @@
 "use client";
-import Image from "next/image";
-import { useForm } from "react-hook-form";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormDescription,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
 
 import { FaSnapchat } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";

@@ -5,7 +5,7 @@ import Menu from "./menu";
 import { APP_NAME_AR } from "@/lib/constants";
 
 import { useEffect, useState } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const NavBar = () => {
   const pathname = usePathname();

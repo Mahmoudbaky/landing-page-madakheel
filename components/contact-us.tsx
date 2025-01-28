@@ -26,15 +26,15 @@ const ContactUs = () => {
         </p>
         <div id="contact-info">
           <div className="flex gap-12">
-            <div className="flex-start gap-3">
-              <Icon />
+            <div className="flex-start gap-7">
+              <Icon iconUrl="telephone.png" />
               <div className="flex flex-col">
                 <span>رقم الهاتف</span>
                 <span>90000000</span>
               </div>
             </div>
-            <div className="flex-start gap-3">
-              <Icon />
+            <div className="flex-start gap-7">
+              <Icon iconUrl="email.png" />
               <div className="flex flex-col">
                 <span> البريد الالكتروني</span>
                 <span>90000000</span>

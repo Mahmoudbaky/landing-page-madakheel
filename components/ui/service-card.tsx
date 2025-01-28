@@ -1,5 +1,6 @@
 interface ServiceData {
   title: string;
+  image: string;
   preaf: string;
 }
 import Icon from "./icon";
@@ -11,7 +12,7 @@ const ServiceCard = ({ data }: { data: ServiceData }) => {
       //   style="animation-delay: 0.1s;"
       dir="rtl"
     >
-      <Icon />
+      <Icon iconUrl={data.image} />
       <h2 className="text-xl font-semibold text-primary dark:text-white mb-2 mt-3">
         {data.title}
       </h2>
