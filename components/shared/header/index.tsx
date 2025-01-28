@@ -4,21 +4,7 @@ import Image from "next/image";
 import Menu from "./menu";
 import { APP_NAME_AR } from "@/lib/constants";
 
-import { useEffect, useState } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
-
 const NavBar = () => {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const [currentPath, setCurrentPath] = useState(pathname);
-
-  useEffect(() => {
-    setCurrentPath(pathname);
-  }, [pathname, searchParams]);
-
-  // For debugging
-  console.log("Current path:", currentPath);
-
   return (
     <header className="w-full " dir="rtl">
       <div className="wrapper flex-between">
