@@ -15,8 +15,8 @@ export async function getAllBlogPosts() {
   // console.log(NEXT_PUBLIC_CONTENTFUL_SPACE_ID);
   const response = await client.getEntries<BlogPost>({
     content_type: "blog",
-    order: "-fields.createdDate",
-    "fields.publish": true, // Only fetch published posts
+    order: ["-sys.createdAt"],
+    // "fields.publish": true, // Only fetch published posts
   });
 
   return response.items;

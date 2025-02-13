@@ -26,5 +26,5 @@ interface BlogPostFields {
 }
 
 export interface BlogPost extends Entry<BlogPostFields> {
-  contentTypeId: "blogPost";
+  contentTypeId: "blog";
 }
