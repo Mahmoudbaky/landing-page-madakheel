@@ -1,4 +1,6 @@
-type ContentfulImage = {
+import type { Entry, EntryFields } from "contentful";
+
+interface ContentfulImage {
   fields: {
     file: {
       url: string;
@@ -11,20 +13,18 @@ type ContentfulImage = {
     };
     title: string;
   };
-};
+}
 
-export type BlogPost = {
-  sys: {
-    id: string;
-    createdAt: string;
-  };
-  fields: {
-    blogTitle: string;
-    blogImage: ContentfulImage;
-    blogSummary: string;
-    createdDate: string;
-    blogAuthor: string;
-    publish: boolean;
-    postContent: string;
-  };
-};
+interface BlogPostFields {
+  blogTitle: EntryFields.Text;
+  blogImage: ContentfulImage;
+  blogSummary: EntryFields.Text;
+  createdDate: EntryFields.Date;
+  blogAuthor: EntryFields.Text;
+  publish: EntryFields.Boolean;
+  postContent: EntryFields.Text;
+}
+
+export interface BlogPost extends Entry<BlogPostFields> {
+  contentTypeId: "blogPost";
+}

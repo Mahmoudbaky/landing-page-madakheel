@@ -42,7 +42,7 @@ const BlogCard = ({ post }: { post: any }) => {
         <p className="">{formattedDate}</p>
       </div>
       <Button variant="default" className="rounded-xl w-[100px]">
-        أقرأالمزيد
+        أقرأ المزيد
       </Button>
     </div>
   );
