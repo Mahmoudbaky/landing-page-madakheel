@@ -27,7 +27,7 @@ const Menu = () => {
           <Link href="#">اتصل بنا</Link>
         </Button>
         <Button asChild variant="ghost" className="font-bold">
-          <Link href="#"> بلوج</Link>
+          <Link href="/blog"> بلوج</Link>
         </Button>
 
         <Button asChild variant="ghost" className="bg-primary text-white">
@@ -56,7 +56,7 @@ const Menu = () => {
               <Link href="#">اتصل بنا</Link>
             </Button>
             <Button asChild variant="ghost" className="font-bold">
-              <Link href="#"> بلوج</Link>
+              <Link href="/blog"> بلوج</Link>
             </Button>
 
             <Button asChild variant="ghost" className="bg-primary text-white">

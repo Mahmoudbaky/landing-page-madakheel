@@ -23,6 +23,7 @@ interface BlogPostFields {
   blogAuthor: EntryFields.Text;
   publish: EntryFields.Boolean;
   postContent: EntryFields.Text;
+  Paragraphs: EntryFields.Text;
 }
 
 export interface BlogPost extends Entry<BlogPostFields> {

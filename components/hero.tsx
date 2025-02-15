@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="bg-muted">
       <div
-        className="flex-between flex-col-reverse md:flex-row min-h-[60vh]  wrapper"
+        className="flex-between flex-col-reverse md:flex-row min-h-[60vh] wrapper"
         dir="rtl"
       >
         <div className="flex flex-col w-[50%] gap-7">

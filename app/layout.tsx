@@ -25,9 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${cairo.className}  antialiased `}>
+      <body
+        className={` ${cairo.className}  antialiased flex flex-col min-h-screen`}
+      >
         <NavBar />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

@@ -21,7 +21,7 @@ const BlogPage = async () => {
               يمكنكم متابعة اخبارنا من خلال المدونة
             </p>
           </div>
-          <div className="ml-16">
+          <div className="">
             <Image
               src="/images/Mailbox-bro.png"
               alt="Picture of the author"

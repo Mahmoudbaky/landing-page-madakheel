@@ -13,3 +13,16 @@ export function getImageUrl(url: string): string {
   // Add 'https:' only if the URL doesn't start with it
   return cleanUrl.startsWith("//") ? `https:${cleanUrl}` : cleanUrl;
 }
+
+//
+export const splitTextIntoParagraphs = (text: string): string[] => {
+  const paragraphs = text.split(".");
+  // let currentParagraph = "";
+  const paragraphsArray: string[] = [];
+
+  for (const paragraph of paragraphs) {
+    paragraphsArray.push(paragraph);
+  }
+
+  return paragraphsArray;
+};

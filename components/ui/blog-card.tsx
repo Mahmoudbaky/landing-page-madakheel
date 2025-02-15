@@ -4,17 +4,8 @@ import Link from "next/link";
 import { getImageUrl } from "@/lib/utils";
 
 const BlogCard = ({ post }: { post: any }) => {
-  console.log(post.fields);
-
-  const {
-    blogTitle,
-    blogImage,
-    blogSummary,
-    createdDate,
-    blogAuthor,
-    publish,
-    postContent,
-  } = post.fields;
+  const { blogTitle, blogImage, blogSummary, createdDate, blogAuthor } =
+    post.fields;
 
   const date = new Date(createdDate);
 
@@ -26,13 +17,14 @@ const BlogCard = ({ post }: { post: any }) => {
 
   return (
     <div className=" dark:bg-gray-800 rounded-xl  " dir="rtl">
-      <div>
+      <div className="h-[300px] w-full overflow-hidden rounded-md">
         <Image
           src={`https:${blogImage.fields.file.url}`}
           alt={blogImage.fields.title}
+          layout="responsive"
           width={blogImage.fields.file.details.image.width}
           height={blogImage.fields.file.details.image.height}
-          className="rounded-md max-h-[300px] max-w-full "
+          className="object-cover w-full h-full"
         />
       </div>
       <div className="my-4 space-y-2">
@@ -42,7 +34,7 @@ const BlogCard = ({ post }: { post: any }) => {
         <p className="">{formattedDate}</p>
       </div>
       <Button variant="default" className="rounded-xl w-[100px]">
-        أقرأ المزيد
+        <Link href={`/blog/${post.sys.id}`}>أقرأ المزيد</Link>
       </Button>
     </div>
   );
