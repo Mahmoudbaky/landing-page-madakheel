@@ -16,24 +16,23 @@ const BlogCard = ({ post }: { post: any }) => {
   const formattedDate = `${year}-${month}-${day}`;
 
   return (
-    <div className=" dark:bg-gray-800 rounded-xl  " dir="rtl">
-      <div className="h-[300px] w-full overflow-hidden rounded-md">
+    <div className=" dark:bg-gray-800 rounded-xl border-test" dir="rtl">
+      <div className="relative h-[300px] w-full overflow-hidden rounded-md">
         <Image
           src={`https:${blogImage.fields.file.url}`}
           alt={blogImage.fields.title}
-          layout="responsive"
-          width={blogImage.fields.file.details.image.width}
-          height={blogImage.fields.file.details.image.height}
-          className="object-cover w-full h-full"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-md"
         />
       </div>
-      <div className="my-4 space-y-2">
+      <div className="my-4 space-y-2 border-test ">
         <p className="font-bold">{blogAuthor}</p>
         <h1 className="h3-bold">{blogTitle}</h1>
         <p className="text-justify">{blogSummary}</p>
         <p className="">{formattedDate}</p>
       </div>
-      <Button variant="default" className="rounded-xl w-[100px]">
+      <Button variant="default" className="rounded-xl w-[100px] sticky">
         <Link href={`/blog/${post.sys.id}`}>أقرأ المزيد</Link>
       </Button>
     </div>

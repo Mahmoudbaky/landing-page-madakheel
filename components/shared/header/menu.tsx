@@ -15,7 +15,7 @@ const Menu = () => {
     <div className="flex justify-end gap-3 ">
       <nav className="hidden xl:flex w-full max-w-full gap-1">
         <Button asChild variant="ghost" className="font-bold">
-          <Link href="#">الصفحة الرئيسية</Link>
+          <Link href="/">الصفحة الرئيسية</Link>
         </Button>
         <Button asChild variant="ghost" className="font-bold">
           <Link href="#">من نحن</Link>
@@ -44,7 +44,7 @@ const Menu = () => {
           <SheetContent className="flex flex-col items-start">
             <SheetTitle>القائمة</SheetTitle>
             <Button asChild variant="ghost" className="font-bold">
-              <Link href="#">الصفحة الرئيسية</Link>
+              <Link href="/">الصفحة الرئيسية</Link>
             </Button>
             <Button asChild variant="ghost" className="font-bold">
               <Link href="#">من نحن</Link>

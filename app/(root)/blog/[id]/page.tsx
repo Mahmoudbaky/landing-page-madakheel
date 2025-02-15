@@ -54,6 +54,7 @@ const DetailsPage = async (props: { params: Promise<{ id: string }> }) => {
             alt={blogImage.fields.title}
             width={blogImage.fields.file.details.image.width}
             height={blogImage.fields.file.details.image.height}
+            className="object-fill w-full"
           />
           <div className="mt-7">
             <p className="h1-bold">{blogSummary}</p>
