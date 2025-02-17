@@ -16,7 +16,7 @@ const BlogCard = ({ post }: { post: any }) => {
   const formattedDate = `${year}-${month}-${day}`;
 
   return (
-    <div className=" dark:bg-gray-800 rounded-xl border-test" dir="rtl">
+    <div className=" dark:bg-gray-800 rounded-xl" dir="rtl">
       <div className="relative h-[300px] w-full overflow-hidden rounded-md">
         <Image
           src={`https:${blogImage.fields.file.url}`}
@@ -26,7 +26,7 @@ const BlogCard = ({ post }: { post: any }) => {
           className="rounded-md"
         />
       </div>
-      <div className="my-4 space-y-2 border-test ">
+      <div className="my-4 space-y-2">
         <p className="font-bold">{blogAuthor}</p>
         <h1 className="h3-bold">{blogTitle}</h1>
         <p className="text-justify">{blogSummary}</p>
